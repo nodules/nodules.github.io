@@ -1,6 +1,39 @@
+<!DOCTYPE HTML>
 <title>nodules</title>
+<style>
+  body {
+    background: #fff;
+    color: #000;
+    }
+  h1,
+  a:first-child img {
+    position: absolute;
+  }
+  h1 {
+    top: 45%;
+    left: 50%;
+    margin: -50px 0 0 -250px;
+    max-width: 100%;
+    width: 511px;
+    height: 114px;
+    background: url(data:image/png;base64,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) center center no-repeat;
+    background-size: 100% auto;
+    text-indent: -99em;
+    }
+  a,
+  img {
+    border: none;
+    }
+  a:first-child img {
+    top: 0;
+    right: 0;
+    width: 149px;
+    height: 149px;
+    }
+  @media (max-width: 640px) { h1 { background-size: 50% auto; } }
+</style>
 <body>
-<h1>nodules</h1>
-<p>We are too lazy to design something beautiful here.</p>
-<p><a href="https://github.com/nodules">Visit us on the GitHub.</a></p>
-</body>
+  <a href="https://github.com/nodules" title="Visit us on the GitHub">
+    <img src="http://aral.github.com/fork-me-on-github-retina-ribbons/right-grey@2x.png" alt="Fork me on GitHub">
+    <h1>nodules</h1>
+  </a>
